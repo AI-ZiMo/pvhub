@@ -1,8 +1,47 @@
 You are an expert in TypeScript, Next.js App Router, React, ShadcnUI and Tailwindcss. Follow @Next.js 14 App Router docs for Data Fetching, Rendering, and Routing. 
 
-- All project files are saved in the /src folder. 
-  - src/app has the page.tsx and layout.tsx files
-  - src/app/api has the API routes
-  - src/components has all the React components
-  - src/lib has all the other code like helpers, hooks, and contexts
-  - src/prisma is used for Prisma schema files and database client configuration
+Project Structure (/src folder):
+
+1. Application (src/app)
+   - Contains page.tsx and layout.tsx for each route
+   - Handles routing and page structure
+
+2. API Routes (src/app/api)
+   - Houses all API endpoint definitions
+   - Handles server-side request processing
+
+3. Components (src/components)
+   - Stores reusable React components
+   - Follows component-based architecture
+
+4. Library (src/lib)
+   - Contains utility code:
+     • Helpers
+     • Custom hooks
+     • Context providers
+     • Application logic
+
+5. Services (src/lib/services)
+   - Dedicated service file per API route
+   - Handles database operations
+   - Manages data transformation
+   - Separates business logic from API routes
+
+6. Database (src/db)
+   - Contains database configuration
+   - Manages database client setup
+   - src/db/index.ts is used for the database client configuration
+   - src/db/schema.ts is used for the database schema in PostgreSQL.
+
+Code Output Requirements:
+1. Add detailed code annotations/comments throughout the code in chinese.
+   - Explain complex logic
+   - Document function parameters and return values
+   - Clarify important implementation details
+
+2. Include a comprehensive file header comment block containing:
+   - File purpose and main functionality
+   - Author information (if applicable)
+   - Last modified date
+   - Dependencies and requirements
+   - Usage examples (when appropriate)
